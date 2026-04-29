@@ -28,7 +28,8 @@ make_cor <- function(expr_mat){
       mat[i,j] <- cor(
         expr_mat[lnc_ids[j],],
         expr_mat[target_ids[i],],
-        use="pairwise.complete.obs"
+        use="pairwise.complete.obs",
+        method="pearson"
       )
     }
   }
