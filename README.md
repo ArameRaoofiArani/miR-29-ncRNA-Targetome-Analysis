@@ -6,7 +6,7 @@ This repository contains analysis scripts used for the dissertation:
 
 ## Overview
 
-These scripts analyse RNA-seq data (GSE270877) to examine expression and correlation patterns of candidate lncRNAs identified from CLIP-seq analysis.
+These scripts analyze RNA-seq data (GSE270877) to examine expression and correlation patterns of candidate lncRNAs identified from CLIP-seq analysis.
 
 Candidate lncRNAs:
 
