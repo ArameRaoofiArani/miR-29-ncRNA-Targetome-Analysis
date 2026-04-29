@@ -29,6 +29,7 @@ in the working directory.
 ## Requirements
 
 R packages:
+
 ```r
 DESeq2
 ggplot2
@@ -37,5 +38,5 @@ tidyr
 tibble
 purrr
 
-## Notes
+## Note
 Correlation was calculated using Pearson correlation on VST-normalized expression values. Genes with low variability or missing values were excluded.
