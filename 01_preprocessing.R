@@ -1,5 +1,3 @@
-
-```r
 library(DESeq2)
 
 # Read data
