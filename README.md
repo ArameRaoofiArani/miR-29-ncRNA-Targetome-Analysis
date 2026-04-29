@@ -9,6 +9,7 @@ This repository contains analysis scripts used for the dissertation:
 These scripts analyse RNA-seq data (GSE270877) to examine expression and correlation patterns of candidate lncRNAs identified from CLIP-seq analysis.
 
 Candidate lncRNAs:
+
 - H19
 - SNHG7
 - LINC00511
@@ -16,27 +17,26 @@ Candidate lncRNAs:
 ## Analysis steps
 
 - Import raw count data
-- DESeq2 normalization (VST)
-- Extraction of lncRNA expression
+- DESeq2 normalization using variance stabilizing transformation (VST)
+- Extraction of candidate lncRNA expression
 - Pearson correlation analysis
-- Visualization (bubble plots)
+- Visualization using bubble plots
 
 ## Input data
 
-GSE270877_Raw_Counts.txt
-in the working directory.
+Place the file `GSE270877_Raw_Counts.txt` in the working directory.
 
 ## Requirements
 
 R packages:
 
-```r
-DESeq2
-ggplot2
-dplyr
-tidyr
-tibble
-purrr
+- DESeq2
+- ggplot2
+- dplyr
+- tidyr
+- tibble
+- purrr
 
-## Note
+## Notes
+
 Correlation was calculated using Pearson correlation on VST-normalized expression values. Genes with low variability or missing values were excluded.
